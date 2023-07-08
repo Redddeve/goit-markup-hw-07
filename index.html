@@ -14,16 +14,17 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
+        <a href="./index.html" class="logo link">
+          Web<span class="logo-head">Studio</span>
+        </a>
         <nav class="page-nav">
-          <a href="./index.html" class="logo link">
-            Web<span class="logo-head">Studio</span>
-          </a>
-
           <ul class="site-nav list">
             <li class="menu-item">
               <a href="./index.html" class="link studio-link">Studio</a>
@@ -46,11 +47,16 @@
             </li>
           </ul>
         </address>
+        <button class="menu-toggle js-open-menu">
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
-      <!-- Hero -->
+      <!--? Hero -->
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -60,55 +66,55 @@
         </div>
       </section>
 
-      <!-- Qualities -->
+      <!--? Qualities -->
       <section class="qualities section">
         <div class="container">
           <h2 class="visually-hidden">Our qualities</h2>
           <ul class="list section-list">
-            <li class="flex-list qual-list">
+            <li class="qual-list">
               <div class="qualities-icons">
                 <svg class="qualities-icon" width="64" height="64">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="title content-title">Strategy</h3>
-              <p class="text">
+              <h3 class="title">Strategy</h3>
+              <p class="qual-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="flex-list qual-list">
+            <li class="qual-list">
               <div class="qualities-icons">
                 <svg class="qualities-icon" width="64" height="64">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="title content-title">Punctuality</h3>
-              <p class="text">
+              <h3 class="title">Punctuality</h3>
+              <p class="qual-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li class="flex-list qual-list">
+            <li class="qual-list">
               <div class="qualities-icons">
                 <svg class="qualities-icon" width="64" height="64">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="title content-title">Diligence</h3>
-              <p class="text">
+              <h3 class="title">Diligence</h3>
+              <p class="qual-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="flex-list qual-list">
+            <li class="qual-list">
               <div class="qualities-icons">
                 <svg class="qualities-icon" width="64" height="64">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="title content-title">Technologies</h3>
-              <p class="text">
+              <h3 class="title">Technologies</h3>
+              <p class="qual-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -117,34 +123,66 @@
         </div>
       </section>
 
-      <!-- Our occupation -->
+      <!--? Our occupation -->
       <section class="occupation">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="list section-list">
-            <li class="flex-list occup-list">
-              <img src="./images/img1.jpg" alt="image 1" width="360" />
+            <li class="occup-list">
+              <img
+                srcset="
+                  ./images/occupation/occ1_360.webp 1x,
+                  ./images/occupation/occ1_720.webp 2x
+                "
+                src="./images/occupation/img1.jpg"
+                alt="Occupation 1"
+                width="360"
+              />
             </li>
-            <li class="flex-list occup-list">
-              <img src="./images/img2.jpg" alt="image 2" width="360" />
+            <li class="occup-list">
+              <img
+                srcset="
+                  ./images/occupation/occ2_360.webp 1x,
+                  ./images/occupation/occ2_720.webp 2x
+                "
+                src="./images/occupation/img2.jpg"
+                alt="Occupation 2"
+                width="360"
+              />
             </li>
-            <li class="flex-list occup-list">
-              <img src="./images/img3.jpg" alt="image 3" width="360" />
+            <li class="occup-list">
+              <img
+                srcset="
+                  ./images/occupation/occ3_360.webp 1x,
+                  ./images/occupation/occ3_720.webp 2x
+                "
+                src="./images/occupation/img3.jpg"
+                alt="Occupation 3"
+                width="360"
+              />
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- Our Team -->
+      <!--? Our Team -->
       <section class="team section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="list section-list">
-            <li class="team-card flex-list">
-              <img src="./images/card1.jpg" alt="card 1" width="264" />
+            <li class="team-card">
+              <img
+                srcset="
+                  ./images/team/team1_264.webp 1x,
+                  ./images/team/team1_528.webp 2x
+                "
+                src="./images/team/team1_264.webp"
+                alt="Team member 1"
+                width="264"
+              />
               <div class="card-content">
-                <h3 class="title content-title">Mark Guerrero</h3>
-                <p class="text card-text">Product Designer</p>
+                <h3 class="content-title">Mark Guerrero</h3>
+                <p class="card-text">Product Designer</p>
                 <ul class="list socials">
                   <li class="socials-item">
                     <a
@@ -201,11 +239,19 @@
                 </ul>
               </div>
             </li>
-            <li class="team-card flex-list">
-              <img src="./images/card2.jpg" alt="card 2" width="264" />
+            <li class="team-card">
+              <img
+                srcset="
+                  ./images/team/team2_264.webp 1x,
+                  ./images/team/team2_528.webp 2x
+                "
+                src="./images/team/team2_264.webp"
+                alt="Team member 2"
+                width="264"
+              />
               <div class="card-content">
-                <h3 class="title content-title">Tom Ford</h3>
-                <p class="text card-text">Frontend Developer</p>
+                <h3 class="content-title">Tom Ford</h3>
+                <p class="card-text">Frontend Developer</p>
                 <ul class="list socials">
                   <li class="socials-item">
                     <a
@@ -262,11 +308,19 @@
                 </ul>
               </div>
             </li>
-            <li class="team-card flex-list">
-              <img src="./images/card3.jpg" alt="card 3" width="264" />
+            <li class="team-card">
+              <img
+                srcset="
+                  ./images/team/team3_264.webp 1x,
+                  ./images/team/team3_528.webp 2x
+                "
+                src="./images/team/team3_264.webp"
+                alt="Team member 3"
+                width="264"
+              />
               <div class="card-content">
-                <h3 class="title content-title">Camila Garcia</h3>
-                <p class="text card-text">Marketing</p>
+                <h3 class="content-title">Camila Garcia</h3>
+                <p class="card-text">Marketing</p>
                 <ul class="list socials">
                   <li class="socials-item">
                     <a
@@ -323,11 +377,19 @@
                 </ul>
               </div>
             </li>
-            <li class="team-card flex-list">
-              <img src="./images/card4.jpg" alt="card 4" width="264" />
+            <li class="team-card">
+              <img
+                srcset="
+                  ./images/team/team4_264.webp 1x,
+                  ./images/team/team4_528.webp 2x
+                "
+                src="./images/team/team4_264.webp"
+                alt="Team member 4"
+                width="264"
+              />
               <div class="card-content">
-                <h3 class="title content-title">Daniel Wilson</h3>
-                <p class="text card-text">UI Designer</p>
+                <h3 class="content-title">Daniel Wilson</h3>
+                <p class="card-text">UI Designer</p>
                 <ul class="list socials">
                   <li class="socials-item">
                     <a
@@ -387,8 +449,8 @@
           </ul>
         </div>
       </section>
-      <!-- Clients -->
-      <section class="clients">
+      <!--? Clients -->
+      <section class="clients section">
         <div class="container">
           <h2 class="section-title">Customers</h2>
           <ul class="list client-list">
@@ -473,10 +535,9 @@
           </ul>
         </div>
       </section>
-      <!-- Booking -->
     </main>
 
-    <!-- Footer -->
+    <!--? Footer -->
     <footer class="footer">
       <div class="container footer-box">
         <div class="footer-logo-box">
@@ -569,7 +630,7 @@
       </div>
     </footer>
 
-    <!-- Modal -->
+    <!--? Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button
@@ -664,6 +725,94 @@
         </form>
       </div>
     </div>
+
+    <!--? Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-button js-close-menu">
+        <svg class="menu-icon" width="8" height="8">
+          <use href="./images/icons.svg#close-black"></use>
+        </svg>
+      </button>
+      <div class="mobile-nav">
+        <ul class="site-nav mob-nav">
+          <li>
+            <a href="./index.html" class="link studio-link">Studio</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="link">Portfolio</a>
+          </li>
+          <li><a href="" class="link">Contacts</a></li>
+        </ul>
+        <div class="mob-contacts-box">
+          <ul class="mob-contacts">
+            <li class="mobile-tel">
+              <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-mail">
+              <a href="mailto:info@devstudio.com" class="link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-socials">
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://www.instargam.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram icon"
+              >
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter icon"
+              >
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook icon"
+              >
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Linkedin icon"
+              >
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
