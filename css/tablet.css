@@ -1,0 +1,139 @@
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .page-nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  address.contacts {
+    display: block;
+    font-style: normal;
+  }
+  header {
+    height: 72px;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .menu-container {
+    display: none;
+  }
+  .studio-link:after {
+    content: '';
+    display: inline-block;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    border-radius: 2px;
+    background-color: var(--pressed-state);
+  }
+  .portfolio-link:after {
+    content: '';
+    display: inline-block;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    border-radius: 2px;
+    background-color: var(--pressed-state);
+  }
+  .header .link {
+    padding: 24px 0;
+  }
+  .site-nav .link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .button.secondary {
+    padding: 12px 24px;
+  }
+  .title {
+    text-align: initial;
+  }
+  .section-list {
+    gap: 72px 24px;
+  }
+  /** Hero bg */
+  .hero {
+    min-width: 768px;
+    min-height: 436px;
+    background-image: var(--hero-gradient),
+      url('../images/hero/hero_bg_768.webp');
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--hero-gradient),
+        url('../images/hero/hero_bg_1536.webp');
+    }
+  }
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+    margin: 0 auto 36px;
+  }
+  .qual-list {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .client-list {
+    gap: 72px 24px;
+  }
+  .client-logo {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+  .cards {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+  .filter-list {
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+  .card-list {
+    flex-direction: row;
+    gap: 72px 24px;
+  }
+  .portfolio-card {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .footer-box {
+    justify-content: flex-start;
+  }
+  .footer-logo-box,
+  .footer-social-box,
+  .footer-input-box {
+    align-items: flex-start;
+  }
+  .footer-social-box {
+    align-items: flex-start;
+  }
+  .footer-input-box {
+    align-items: flex-start;
+  }
+  .footer-email-input {
+    width: 264px;
+  }
+  .modal {
+    width: 408px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .clients {
+    margin: 0 auto;
+    width: 584px;
+  }
+  .footer-box {
+    padding-left: 108px;
+  }
+}
